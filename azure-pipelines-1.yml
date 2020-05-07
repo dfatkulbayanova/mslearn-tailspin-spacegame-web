@@ -54,7 +54,7 @@ stages:
             displayName: Azure App Service Deploy
             inputs:
               WebAppKind: webApp
-              ConnectedServiceName: 'csatech'
+              ConnectedServiceName: 'csatechday'
               WebAppName: $(WebAppName)
               Package: $(System.WorkFolder)/**/*.zip
 - stage: Deploy_In_QA # Deploy artifacts to the qa environment
@@ -72,7 +72,7 @@ stages:
             displayName: Azure App Service Deploy
             inputs:
               WebAppKind: webApp
-              ConnectedServiceName: 'csatech'
+              ConnectedServiceName: 'csatechday'
               WebAppName: $(WebAppName)
               Package: $(System.WorkFolder)/**/*.zip
 - stage: Deploy_In_Prod # Deploy artifacts to the production environment
@@ -90,6 +90,6 @@ stages:
             displayName: Azure App Service Deploy
             inputs:
               WebAppKind: webApp
-              ConnectedServiceName: 'csatech'
+              ConnectedServiceName: 'csatechday'
               WebAppName: $(WebAppName)
               Package: $(System.WorkFolder)/**/*.zip
