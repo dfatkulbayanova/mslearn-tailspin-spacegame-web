@@ -44,7 +44,7 @@ stages:
   - deployment: azure_web_app_dev
     pool: 'Hosted VS2017'
     variables:
-      WebAppName: 'multistage-yaml-dev'
+      WebAppName: 'csatech'
     environment: 'dev-environment'
     strategy:
       runOnce:
@@ -62,7 +62,7 @@ stages:
   - deployment: azure_web_app_qa
     pool: 'Hosted VS2017'
     variables:
-      WebAppName: 'multistage-yaml-qa'
+      WebAppName: 'csatechqa'
     environment: 'qa-environment'
     strategy:
       runOnce:
@@ -80,7 +80,7 @@ stages:
   - deployment: azure_web_app_prod
     pool: 'Hosted VS2017'
     variables:
-      WebAppName: 'multistage-yaml'
+      WebAppName: 'csatechprod'
     environment: 'prod-environment'
     strategy:
       runOnce:
